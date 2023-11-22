@@ -40,10 +40,13 @@ public class MainClass {
 		case 5:
 			dao.allData();
 		  break;
-		case 6:
-		
+		case 6:	
+			dao.save();
 		  break;
 		case 7:
+			dao.load();
+			break;
+			
 			
 		   }
 		}

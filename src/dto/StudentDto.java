@@ -11,10 +11,6 @@ public class StudentDto {
 	private int kor;
 	private int eng;
 	private int math;
-	
-	public void StudentDto() {
-		
-	}
 
 	public StudentDto(String name, int age, double height, String address, int kor, int eng, int math) {
 		this.name = name;
@@ -84,13 +80,14 @@ public class StudentDto {
 
 	@Override
 	public String toString() {
-		return "StudentDto [name=" + name + ", age=" + age + ", height=" + height + ", address=" + address + ", kor="
-				+ kor + ", eng=" + eng + ", math=" + math + "]";
+				return name + "-" + age + "-" + height + "-" + address + "-"+ kor + "-" + eng + "-" + math;
 	}
 	
 	public void print() {
 		System.out.println("name=" + name + ", age=" + age + ", height=" + height + ", address=" + address + ", kor="
 				+ kor + ", eng=" + eng + ", math=" + math);
+		
+		
 		
 	}
 	
