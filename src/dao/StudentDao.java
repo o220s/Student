@@ -87,23 +87,6 @@ public class StudentDao {
 			}
 		}
 	}
-		/*
-		int index = search(name);
-		
-		if(index != -1) {
-			System.out.println("데이터를 찾았습니다");
-			System.out.println("이름:" + student[index].getName());
-			System.out.println("나이:" + student[index].getAge());
-			System.out.println("키:" +   student[index].getHeight());
-			System.out.println("주소:" + student[index].getAddress());
-			System.out.println("국어:" + student[index].getKor());
-			System.out.println("영어:" + student[index].getEng());
-			System.out.println("수학:" + student[index].getMath());			
-		}else {
-			System.out.println("학생명단에 없습니다");
-		}		
-		
-	}*/
 	public void update() {
 		System.out.print("수정하고 싶은 학생의 이름 >> ");
 		String name = sc.next();
@@ -203,7 +186,7 @@ public class StudentDao {
 			
 			student[i]= new StudentDto(name, age, height, address, kor, eng, math);
 		}
-		System.out.println("데이터로드 성공");
+		System.out.println("데이터로드 성공"); 
 	}
 	
 	
